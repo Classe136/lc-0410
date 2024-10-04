@@ -1,0 +1,120 @@
+/* Generals */
+
+/* Custom properties */
+:root {
+    --bg-light: #F6F6F6;
+    --dark: #23272a;
+    --bg-blue: #255EE9;
+    --contrast-color: #748ADB;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--dark);
+}
+
+ul {
+    list-style: none;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+/* background */
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+
+.bg-contrast {
+    background-color: var(--contrast-color);
+    ;
+}
+
+/* container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container-small {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* text */
+.text-white {
+    color: white;
+}
+
+.text-contrast {
+    color: var(--contrast-color);
+}
+
+/* Utility flex */
+.d-flex {
+    display: flex;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* header */
+header ul li a {
+    padding: 6px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* main */
+#hero {
+    background-image: url('../img/jumbo.png');
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 60%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.content {
+    width: 40%;
+}
+
+/* footer */
+footer {
+    background-color: var(--dark);
+
+}
+
+.footer-top {
+    border-bottom: 1px solid var(--bg-light);
+}
